@@ -8,15 +8,12 @@ import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs
 const galleryImages = [images.gallery01, images.gallery02, images.gallery03, images.gallery04];
 
 const Gallery: NextPage = () => {
-    const scrollRef = useRef<null>(null)
+    const scrollRef = useRef<any>(null)
 
     
 
     const scroll = (direction: string) => {
         const {current} = scrollRef;
-
-    console.log(scrollRef);
-
 
         if(direction === "left"){
             current.scrollLeft -= 300
